@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_StocCurentToateGestiunile" targetNamespace="http://tempuri.org/ds_StocCurentToateGestiunile.xsd" xmlns:mstns="http://tempuri.org/ds_StocCurentToateGestiunile.xsd" xmlns="http://tempuri.org/ds_StocCurentToateGestiunile.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reporting.Properties.Settings.GlobalReference.Default.ERPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_reports_stoc_allTableAdapter" GeneratorDataComponentClassName="view_reports_stoc_allTableAdapter" Name="view_reports_stoc_all" UserDataComponentName="view_reports_stoc_allTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERPConnectionString (Settings)" DbObjectName="DateMasterDannycom.dbo.view_reports_stoc_all" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        view_reports_stoc_all.*
+FROM            view_reports_stoc_all</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodProdus" DataSetColumn="CodProdus" />
+              <Mapping SourceColumn="Descriere" DataSetColumn="Descriere" />
+              <Mapping SourceColumn="Familie" DataSetColumn="Familie" />
+              <Mapping SourceColumn="Categorie" DataSetColumn="Categorie" />
+              <Mapping SourceColumn="Subcategorie" DataSetColumn="Subcategorie" />
+              <Mapping SourceColumn="Furnizor" DataSetColumn="Furnizor" />
+              <Mapping SourceColumn="Depozit" DataSetColumn="Depozit" />
+              <Mapping SourceColumn="Iancului" DataSetColumn="Iancului" />
+              <Mapping SourceColumn="Baicului" DataSetColumn="Baicului" />
+              <Mapping SourceColumn="Beldiman" DataSetColumn="Beldiman" />
+              <Mapping SourceColumn="Foisor" DataSetColumn="Foisor" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_StocCurentToateGestiunile" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ds_StocCurentToateGestiunile" msprop:Generator_UserDSName="ds_StocCurentToateGestiunile">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_reports_stoc_all" msprop:Generator_TableClassName="view_reports_stoc_allDataTable" msprop:Generator_TableVarName="tableview_reports_stoc_all" msprop:Generator_TablePropName="view_reports_stoc_all" msprop:Generator_RowDeletingName="view_reports_stoc_allRowDeleting" msprop:Generator_RowChangingName="view_reports_stoc_allRowChanging" msprop:Generator_RowEvHandlerName="view_reports_stoc_allRowChangeEventHandler" msprop:Generator_RowDeletedName="view_reports_stoc_allRowDeleted" msprop:Generator_UserTableName="view_reports_stoc_all" msprop:Generator_RowChangedName="view_reports_stoc_allRowChanged" msprop:Generator_RowEvArgName="view_reports_stoc_allRowChangeEvent" msprop:Generator_RowClassName="view_reports_stoc_allRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodProdus" msprop:Generator_ColumnVarNameInTable="columnCodProdus" msprop:Generator_ColumnPropNameInRow="CodProdus" msprop:Generator_ColumnPropNameInTable="CodProdusColumn" msprop:Generator_UserColumnName="CodProdus" type="xs:int" />
+              <xs:element name="Descriere" msprop:Generator_ColumnVarNameInTable="columnDescriere" msprop:Generator_ColumnPropNameInRow="Descriere" msprop:Generator_ColumnPropNameInTable="DescriereColumn" msprop:Generator_UserColumnName="Descriere">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Familie" msprop:Generator_ColumnVarNameInTable="columnFamilie" msprop:Generator_ColumnPropNameInRow="Familie" msprop:Generator_ColumnPropNameInTable="FamilieColumn" msprop:Generator_UserColumnName="Familie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Categorie" msprop:Generator_ColumnVarNameInTable="columnCategorie" msprop:Generator_ColumnPropNameInRow="Categorie" msprop:Generator_ColumnPropNameInTable="CategorieColumn" msprop:Generator_UserColumnName="Categorie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Subcategorie" msprop:Generator_ColumnVarNameInTable="columnSubcategorie" msprop:Generator_ColumnPropNameInRow="Subcategorie" msprop:Generator_ColumnPropNameInTable="SubcategorieColumn" msprop:Generator_UserColumnName="Subcategorie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Furnizor" msprop:Generator_ColumnVarNameInTable="columnFurnizor" msprop:Generator_ColumnPropNameInRow="Furnizor" msprop:Generator_ColumnPropNameInTable="FurnizorColumn" msprop:Generator_UserColumnName="Furnizor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Depozit" msprop:Generator_ColumnVarNameInTable="columnDepozit" msprop:Generator_ColumnPropNameInRow="Depozit" msprop:Generator_ColumnPropNameInTable="DepozitColumn" msprop:Generator_UserColumnName="Depozit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Iancului" msprop:Generator_ColumnVarNameInTable="columnIancului" msprop:Generator_ColumnPropNameInRow="Iancului" msprop:Generator_ColumnPropNameInTable="IanculuiColumn" msprop:Generator_UserColumnName="Iancului" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Baicului" msprop:Generator_ColumnVarNameInTable="columnBaicului" msprop:Generator_ColumnPropNameInRow="Baicului" msprop:Generator_ColumnPropNameInTable="BaiculuiColumn" msprop:Generator_UserColumnName="Baicului" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Beldiman" msprop:Generator_ColumnVarNameInTable="columnBeldiman" msprop:Generator_ColumnPropNameInRow="Beldiman" msprop:Generator_ColumnPropNameInTable="BeldimanColumn" msprop:Generator_UserColumnName="Beldiman" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Foisor" msprop:Generator_ColumnVarNameInTable="columnFoisor" msprop:Generator_ColumnPropNameInRow="Foisor" msprop:Generator_ColumnPropNameInTable="FoisorColumn" msprop:Generator_UserColumnName="Foisor" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

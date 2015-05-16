@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MRPDataSet_view_AlerteStockType1_Block" targetNamespace="http://tempuri.org/MRPDataSet_view_AlerteStockType1_Block.xsd" xmlns:mstns="http://tempuri.org/MRPDataSet_view_AlerteStockType1_Block.xsd" xmlns="http://tempuri.org/MRPDataSet_view_AlerteStockType1_Block.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MRPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MRPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reporting.Properties.Settings.GlobalReference.Default.MRPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_AlerteStocType1_BlockTableAdapter" GeneratorDataComponentClassName="view_AlerteStocType1_BlockTableAdapter" Name="view_AlerteStocType1_Block" UserDataComponentName="view_AlerteStocType1_BlockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MRPConnectionString (Settings)" DbObjectName="MRP.stoc.view_AlerteStocType1_Block" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IDGestiune, DenumireGestiune, CodProdus, Descriere, IDSubCategorie, DenumireSubcategorie FROM stoc.view_AlerteStocType1_Block</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IDGestiune" DataSetColumn="IDGestiune" />
+              <Mapping SourceColumn="DenumireGestiune" DataSetColumn="DenumireGestiune" />
+              <Mapping SourceColumn="CodProdus" DataSetColumn="CodProdus" />
+              <Mapping SourceColumn="Descriere" DataSetColumn="Descriere" />
+              <Mapping SourceColumn="IDSubCategorie" DataSetColumn="IDSubCategorie" />
+              <Mapping SourceColumn="DenumireSubcategorie" DataSetColumn="DenumireSubcategorie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MRPDataSet_view_AlerteStockType1_Block" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MRPDataSet_view_AlerteStockType1_Block" msprop:Generator_UserDSName="MRPDataSet_view_AlerteStockType1_Block">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_AlerteStocType1_Block" msprop:Generator_TableClassName="view_AlerteStocType1_BlockDataTable" msprop:Generator_TableVarName="tableview_AlerteStocType1_Block" msprop:Generator_TablePropName="view_AlerteStocType1_Block" msprop:Generator_RowDeletingName="view_AlerteStocType1_BlockRowDeleting" msprop:Generator_RowChangingName="view_AlerteStocType1_BlockRowChanging" msprop:Generator_RowEvHandlerName="view_AlerteStocType1_BlockRowChangeEventHandler" msprop:Generator_RowDeletedName="view_AlerteStocType1_BlockRowDeleted" msprop:Generator_UserTableName="view_AlerteStocType1_Block" msprop:Generator_RowChangedName="view_AlerteStocType1_BlockRowChanged" msprop:Generator_RowEvArgName="view_AlerteStocType1_BlockRowChangeEvent" msprop:Generator_RowClassName="view_AlerteStocType1_BlockRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDGestiune" msprop:Generator_ColumnVarNameInTable="columnIDGestiune" msprop:Generator_ColumnPropNameInRow="IDGestiune" msprop:Generator_ColumnPropNameInTable="IDGestiuneColumn" msprop:Generator_UserColumnName="IDGestiune" type="xs:int" minOccurs="0" />
+              <xs:element name="DenumireGestiune" msprop:Generator_ColumnVarNameInTable="columnDenumireGestiune" msprop:Generator_ColumnPropNameInRow="DenumireGestiune" msprop:Generator_ColumnPropNameInTable="DenumireGestiuneColumn" msprop:Generator_UserColumnName="DenumireGestiune">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodProdus" msprop:Generator_ColumnVarNameInTable="columnCodProdus" msprop:Generator_ColumnPropNameInRow="CodProdus" msprop:Generator_ColumnPropNameInTable="CodProdusColumn" msprop:Generator_UserColumnName="CodProdus" type="xs:int" minOccurs="0" />
+              <xs:element name="Descriere" msprop:Generator_ColumnVarNameInTable="columnDescriere" msprop:Generator_ColumnPropNameInRow="Descriere" msprop:Generator_ColumnPropNameInTable="DescriereColumn" msprop:Generator_UserColumnName="Descriere">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDSubCategorie" msprop:Generator_ColumnVarNameInTable="columnIDSubCategorie" msprop:Generator_ColumnPropNameInRow="IDSubCategorie" msprop:Generator_ColumnPropNameInTable="IDSubCategorieColumn" msprop:Generator_UserColumnName="IDSubCategorie" type="xs:int" minOccurs="0" />
+              <xs:element name="DenumireSubcategorie" msprop:Generator_ColumnVarNameInTable="columnDenumireSubcategorie" msprop:Generator_ColumnPropNameInRow="DenumireSubcategorie" msprop:Generator_ColumnPropNameInTable="DenumireSubcategorieColumn" msprop:Generator_UserColumnName="DenumireSubcategorie">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

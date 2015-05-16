@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MRPDataSet_view_Stoc_AlerteStocType1" targetNamespace="http://tempuri.org/MRPDataSet_view_Stoc_AlerteStocType1.xsd" xmlns:mstns="http://tempuri.org/MRPDataSet_view_Stoc_AlerteStocType1.xsd" xmlns="http://tempuri.org/MRPDataSet_view_Stoc_AlerteStocType1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MRPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MRPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reporting.Properties.Settings.GlobalReference.Default.MRPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_AlerteStocType1TableAdapter" GeneratorDataComponentClassName="view_AlerteStocType1TableAdapter" Name="view_AlerteStocType1" UserDataComponentName="view_AlerteStocType1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MRPConnectionString (Settings)" DbObjectName="MRP.stoc.view_AlerteStocType1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        CodProdus, Descriere, IdGestiune, DenumireGestiune, Stoc, GestiuniCuStoc, DenumireCategorie, Denumire
+FROM            stoc.view_AlerteStocType1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodProdus" DataSetColumn="CodProdus" />
+              <Mapping SourceColumn="Descriere" DataSetColumn="Descriere" />
+              <Mapping SourceColumn="IdGestiune" DataSetColumn="IdGestiune" />
+              <Mapping SourceColumn="DenumireGestiune" DataSetColumn="DenumireGestiune" />
+              <Mapping SourceColumn="Stoc" DataSetColumn="Stoc" />
+              <Mapping SourceColumn="GestiuniCuStoc" DataSetColumn="GestiuniCuStoc" />
+              <Mapping SourceColumn="DenumireCategorie" DataSetColumn="DenumireCategorie" />
+              <Mapping SourceColumn="Denumire" DataSetColumn="Denumire" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MRPDataSet_view_Stoc_AlerteStocType1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MRPDataSet_view_Stoc_AlerteStocType1" msprop:Generator_UserDSName="MRPDataSet_view_Stoc_AlerteStocType1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_AlerteStocType1" msprop:Generator_TableClassName="view_AlerteStocType1DataTable" msprop:Generator_TableVarName="tableview_AlerteStocType1" msprop:Generator_RowChangedName="view_AlerteStocType1RowChanged" msprop:Generator_TablePropName="view_AlerteStocType1" msprop:Generator_RowDeletingName="view_AlerteStocType1RowDeleting" msprop:Generator_RowChangingName="view_AlerteStocType1RowChanging" msprop:Generator_RowEvHandlerName="view_AlerteStocType1RowChangeEventHandler" msprop:Generator_RowDeletedName="view_AlerteStocType1RowDeleted" msprop:Generator_RowClassName="view_AlerteStocType1Row" msprop:Generator_UserTableName="view_AlerteStocType1" msprop:Generator_RowEvArgName="view_AlerteStocType1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodProdus" msprop:Generator_ColumnVarNameInTable="columnCodProdus" msprop:Generator_ColumnPropNameInRow="CodProdus" msprop:Generator_ColumnPropNameInTable="CodProdusColumn" msprop:Generator_UserColumnName="CodProdus" type="xs:int" minOccurs="0" />
+              <xs:element name="Descriere" msprop:Generator_ColumnVarNameInTable="columnDescriere" msprop:Generator_ColumnPropNameInRow="Descriere" msprop:Generator_ColumnPropNameInTable="DescriereColumn" msprop:Generator_UserColumnName="Descriere">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdGestiune" msprop:Generator_ColumnVarNameInTable="columnIdGestiune" msprop:Generator_ColumnPropNameInRow="IdGestiune" msprop:Generator_ColumnPropNameInTable="IdGestiuneColumn" msprop:Generator_UserColumnName="IdGestiune" type="xs:int" minOccurs="0" />
+              <xs:element name="DenumireGestiune" msprop:Generator_ColumnVarNameInTable="columnDenumireGestiune" msprop:Generator_ColumnPropNameInRow="DenumireGestiune" msprop:Generator_ColumnPropNameInTable="DenumireGestiuneColumn" msprop:Generator_UserColumnName="DenumireGestiune">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stoc" msprop:Generator_ColumnVarNameInTable="columnStoc" msprop:Generator_ColumnPropNameInRow="Stoc" msprop:Generator_ColumnPropNameInTable="StocColumn" msprop:Generator_UserColumnName="Stoc" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GestiuniCuStoc" msprop:Generator_ColumnVarNameInTable="columnGestiuniCuStoc" msprop:Generator_ColumnPropNameInRow="GestiuniCuStoc" msprop:Generator_ColumnPropNameInTable="GestiuniCuStocColumn" msprop:Generator_UserColumnName="GestiuniCuStoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DenumireCategorie" msprop:Generator_ColumnVarNameInTable="columnDenumireCategorie" msprop:Generator_ColumnPropNameInRow="DenumireCategorie" msprop:Generator_ColumnPropNameInTable="DenumireCategorieColumn" msprop:Generator_UserColumnName="DenumireCategorie">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Denumire" msprop:Generator_ColumnVarNameInTable="columnDenumire" msprop:Generator_ColumnPropNameInRow="Denumire" msprop:Generator_ColumnPropNameInTable="DenumireColumn" msprop:Generator_UserColumnName="Denumire">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
