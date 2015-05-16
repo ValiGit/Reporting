@@ -24,3 +24,7 @@ That creates an empty repository with no Master branch
     Select Commit and Push from the drop down
 
 Your solution is now in GitHub
+
+----
+adaug ca sa fac commit de test
+---
