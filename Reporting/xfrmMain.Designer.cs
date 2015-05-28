@@ -79,6 +79,7 @@
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.navBarItemRaportDSR_ViewExcel = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
@@ -93,7 +94,7 @@
             // 
             // navBarControl
             // 
-            this.navBarControl.ActiveGroup = this.navBarGroupDepozit;
+            this.navBarControl.ActiveGroup = this.navBarGroup1;
             this.navBarControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navBarControl.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.GrupRapoarteStoc,
@@ -107,7 +108,8 @@
             this.navBarItemStocIstoric,
             this.navBarItemAlerteStoc,
             this.navBarItemProduseBlocatePentruAlerte,
-            this.navBarItemDepozit});
+            this.navBarItemDepozit,
+            this.navBarItemRaportDSR_ViewExcel});
             this.navBarControl.LargeImages = this.navbarImageCollectionLarge;
             this.navBarControl.Location = new System.Drawing.Point(0, 0);
             this.navBarControl.Name = "navBarControl";
@@ -122,7 +124,6 @@
             // navBarGroupDepozit
             // 
             this.navBarGroupDepozit.Caption = "Depozit";
-            this.navBarGroupDepozit.Expanded = true;
             this.navBarGroupDepozit.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemDepozit)});
             this.navBarGroupDepozit.Name = "navBarGroupDepozit";
@@ -185,6 +186,9 @@
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "Rapoarte vanzari";
+            this.navBarGroup1.Expanded = true;
+            this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemRaportDSR_ViewExcel)});
             this.navBarGroup1.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup1.LargeImage")));
             this.navBarGroup1.Name = "navBarGroup1";
             // 
@@ -592,6 +596,13 @@
             this.dockPanel1_Container.Size = new System.Drawing.Size(192, 498);
             this.dockPanel1_Container.TabIndex = 0;
             // 
+            // navBarItemRaportDSR_ViewExcel
+            // 
+            this.navBarItemRaportDSR_ViewExcel.Caption = "Raport Special (viewer)";
+            this.navBarItemRaportDSR_ViewExcel.Name = "navBarItemRaportDSR_ViewExcel";
+            this.navBarItemRaportDSR_ViewExcel.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItemRaportDSR_ViewExcel.SmallImage")));
+            this.navBarItemRaportDSR_ViewExcel.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemRaportDSR_ViewExcel_LinkClicked);
+            // 
             // xfrmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -673,6 +684,7 @@
         private DevExpress.XtraNavBar.NavBarItem navBarItemProduseBlocatePentruAlerte;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroupDepozit;
         private DevExpress.XtraNavBar.NavBarItem navBarItemDepozit;
+        private DevExpress.XtraNavBar.NavBarItem navBarItemRaportDSR_ViewExcel;
 
     }
 }

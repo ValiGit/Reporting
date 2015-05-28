@@ -16,6 +16,7 @@ using DevExpress.LookAndFeel;
 using Reporting.RaporteStoc;
 using System.Data.SqlClient;
 using Reporting.DepozitLayout;
+using Reporting.DSRReports;
 
 namespace Reporting
 {
@@ -559,6 +560,28 @@ namespace Reporting
             xfrm_DepozitLayout_MapCartezian.Tag = "Asezare rafturi - depozit";
             xfrm_DepozitLayout_MapCartezian.Show();
 
+
+        }
+
+        private void navBarItemRaportDSR_ViewExcel_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+
+            xfrmExcelViewer_DSRExistent xfrm_ExcelViewer_DSRExistent = (xfrmExcelViewer_DSRExistent)GetOpenedForm<xfrmExcelViewer_DSRExistent>();
+            if (xfrm_ExcelViewer_DSRExistent == null)
+            {
+            }
+            else
+            {
+                xfrm_ExcelViewer_DSRExistent.Close();
+                xfrm_ExcelViewer_DSRExistent.Dispose();
+                xfrm_ExcelViewer_DSRExistent = null;
+            }
+            //open anyway
+            xfrm_ExcelViewer_DSRExistent = new xfrmExcelViewer_DSRExistent();
+            xfrm_ExcelViewer_DSRExistent.Text = "Raport special - VIEWER";
+            xfrm_ExcelViewer_DSRExistent.MdiParent = this;
+            xfrm_ExcelViewer_DSRExistent.Tag = "Raport special - VIEWER";
+            xfrm_ExcelViewer_DSRExistent.Show();
 
         }
 
